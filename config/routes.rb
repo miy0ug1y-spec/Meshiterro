@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :post_images, only: [:new, :index, :show, :create, :destroy]
-  resources :users, only: [:new, :create, :show, :edit] , path_names: { new: 'sign_up' }
+  resources :users, only: [:new, :create, :show, :edit, :update] , path_names: { new: 'sign_up' }
 
   resource :session
   resources :passwords, param: :token
